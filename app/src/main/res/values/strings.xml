@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Ztt. Tiempo</string>
+    <string name="btn_start_label">Iniciar</string>
+    <string name="btn_voice_label">Voz</string>
+    <string name="weather.data.lat">Latitud</string>
+    <string name="weather.data.lon">Longitud</string>
+    <string name="weather.data.temp">Temperatura</string>
+    <string name="weather.data.temp.min">Mínima</string>
+    <string name="weather.data.temp.max">Máxima</string>
+    <string name="weather.data.temp.humidity">Humedad</string>
+    <string name="weather.data.temp.pressure">Presión</string>
+    <string name="weather.data.temp.weather">Tiempo</string>
+    <string name="weather.info.gps.active">Para una mayor precisión de la ubicación, se recomienda activar el GPS</string>
+    <string name="error.internal">Error interno. Si el problema persiste consulte con su administrador</string>
+    <string name="error.unknown.host.exception">Verifique si tiene activa la conexión a internet.</string>
+    <string name="weather.info.voice">La temperatura en %s es de %s grados y %s</string>
+    <string name="weather.icon.code.01d">Despejado</string>
+    <string name="weather.icon.code.02d">Poco nuboso</string>
+    <string name="weather.icon.code.03d">Nubes dispersas</string>
+    <string name="weather.icon.code.04d">Nubes rotas</string>
+    <string name="weather.icon.code.09d">Aguacero</string>
+    <string name="weather.icon.code.10d">Lluvioso</string>
+    <string name="weather.icon.code.11d">Tormentoso</string>
+    <string name="weather.icon.code.13d">Nieve</string>
+    <string name="weather.icon.code.50d">Niebla</string>
+    <string name="weather.icon.code.none">N/A</string>
+    <string name="weather.info.last.prediction">Última Predicción</string>
+    <string name="weather.date.last.update">Última actualización</string>
+    <string name="weather.alarm.time.save.ok">Se ha actualizado la hora de ejecución de la alarma</string>
+    <string name="weather.alarm.time.error.save.disabled.required">Para actualizar la hora desactivar la alarma</string>
+
+</resources>

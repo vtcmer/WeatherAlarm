@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "weather.com.ztt.zttweatheralarm"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "WEATHER_API_KEY", project.property('WEATHER_API_KEY')
+            buildConfigField "String", "WEATHER_API_HOST", project.property('WEATHER_API_HOST')
+            resValue "string", "GOOGLE_MAPS_API_KEY", project.property('GOOGLE_MAPS_API_KEY')
+        }
+        debug {
+            buildConfigField "String", "WEATHER_API_KEY", project.property('WEATHER_API_KEY')
+            buildConfigField "String", "WEATHER_API_HOST", project.property('WEATHER_API_HOST')
+            resValue "string", "GOOGLE_MAPS_API_KEY", project.property('GOOGLE_MAPS_API_KEY')
+        }
+    }
+}
+
+final retrofitVersion = '2.3.0'
+final espressoVersion = '3.0.0'
+final daggerVersion = '2.11'
+final butterknifeVersion = '8.5.1'
+final robolectricVersion = '3.6.1'
+final mockitoVersion = '1.10.19'
+final junitVersion = '4.12'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile "com.android.support:design:26.1.0"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    testImplementation "junit:junit:${junitVersion}"
+    testImplementation "org.mockito:mockito-android:2.7.22"
+    testImplementation "org.robolectric:robolectric:${robolectricVersion}"
+
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+
+    compile "com.jakewharton:butterknife:${butterknifeVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
+
+    compile "com.google.dagger:dagger-android:${daggerVersion}"
+    compile "com.google.dagger:dagger-android-support:${daggerVersion}"
+    compile "com.google.dagger:dagger:${daggerVersion}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
+
+    compile 'com.squareup.okhttp3:logging-interceptor:3.7.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+
+    compile "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    compile "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    compile "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
+
+
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+
+
+}
