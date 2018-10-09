@@ -1,4 +1,6 @@
 <resources>
+    <string name="action_settings">Acciones</string>
+    <string name="menu_search">Buscador</string>
     <string name="app_name">Ztt. Tiempo</string>
     <string name="btn_start_label">Iniciar</string>
     <string name="btn_voice_label">Voz</string>

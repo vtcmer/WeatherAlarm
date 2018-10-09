@@ -22,13 +22,16 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/GOOGLE_MAPS_API_KEY" />
 
-        <activity android:name=".main.ui.MainActivity">
+        <activity android:name=".main.ui.WeatherMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".main.ui.MainActivity"/>
         <activity
             android:name=".weather.ui.WeatherActivity"
             android:label="@string/weather.info.last.prediction"
@@ -48,7 +51,9 @@
         <service
             android:name=".weather.ui.WeatherAlarmNotificationVoiceService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+
     </application>
 
 </manifest>

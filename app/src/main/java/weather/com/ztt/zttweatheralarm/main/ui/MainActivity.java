@@ -17,6 +17,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import weather.com.ztt.zttweatheralarm.BuildConfig;
+
 import weather.com.ztt.zttweatheralarm.R;
 import weather.com.ztt.zttweatheralarm.WeatherAlarmApplication;
 import weather.com.ztt.zttweatheralarm.weather.WeatherAlarmConfiguration;
